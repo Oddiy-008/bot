@@ -10,7 +10,7 @@ import urllib.request
 ssl._create_default_https_context = ssl._create_unverified_context
 
 # Sizning ma'lumotlaringiz
-TOKEN ="9055109954:AAEPyd6N4Gygd0vrL5hgMEIdq5BfBF5zQ0"
+Token = " 9152321709:AAHu6E6JTehh9-xtZwNTuuzU5SzlZpYwA90
 ADMIN_ID = 8824238939
 CHANNEL_ID = "@hammasi_yaxshi"
 
