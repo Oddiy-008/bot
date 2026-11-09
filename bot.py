@@ -9,8 +9,8 @@ import urllib.request
 # Telefon uchun SSL xatoligini oldini olish
 ssl._create_default_https_context = ssl._create_unverified_context
 
-# Sizning ma'lumotlaringiz
-Token = " 9152321709:AAHu6E6JTehh9-xtZwNTuuzU5SzlZpYwA90
+# Ma'lumotlaringiz
+TOKEN = "9152321709:AAHu6E6JTehh9-xtZwNTuuzU5SzlZpYwA90"
 ADMIN_ID = 8824238939
 CHANNEL_ID = "@hammasi_yaxshi"
 
@@ -220,33 +220,4 @@ def run_bot():
                         {
                             "chat_id": ADMIN_ID,
                             "text": (
-                                "Salom! Bot ishlayapti va 24/7 rejimga"
-                                " tayyor. Menga istalgan matnni yozing, uni"
-                                " siz so'ragan estetik uslubda bezab beraman."
-                            ),
-                        },
-                    )
-                  else:
-                    styled = make_beautiful_text(text)
-                    send_telegram(
-                        "sendMessage",
-                        {
-                            "chat_id": ADMIN_ID,
-                            "text": (
-                                "✨ Mana siz yozgan matnning yangi"
-                                f" ko'rinishi:\n\n{styled}"
-                            ),
-                            "parse_mode": "HTML",
-                        },
-                    )
-    except Exception as e:
-      print("Internet uzildi yoki xatolik, qayta ulanmoqda...", e)
-      time.sleep(5)
-
-
-if __name__ == "__main__":
-  t = threading.Thread(target=ask_admin_for_approval)
-  t.daemon = True
-  t.start()
-
-  run_bot()
+ 
